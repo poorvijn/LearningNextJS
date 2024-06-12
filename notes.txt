@@ -7,4 +7,4 @@ Routes:
 --Nested routes:
 ->A folder within another folder. Ex: membership inside accounts, makes accounts the parent folder/route. This means to access membership, we need to go to /accounts/membership. And as usual membership folder should also have page.js.
 --Dynamic routes:
-->A folder names within [], thus telling NextJS that this is a dynamic route.
+->A folder names within [], thus telling NextJS that this is a dynamic route
