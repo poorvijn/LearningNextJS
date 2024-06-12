@@ -8,3 +8,9 @@ Routes:
 ->A folder within another folder. Ex: membership inside accounts, makes accounts the parent folder/route. This means to access membership, we need to go to /accounts/membership. And as usual membership folder should also have page.js.
 --Dynamic routes:
 ->A folder names within [], thus telling NextJS that this is a dynamic route.
+--Catch all route:
+->[...folderName] -> for >1 parameter in dynamic route. Ex: products/1 -> dynamic. products/1/2/3.. -> needs catch all route. Parameters called slugs. Catch all routes can have any number of slugs.
+
+Links:
+->Method 1: using Link from 'next/link' -> <Link href={'/pathname'}>some text</Link>
+->Method 2: useRouter from 'next/navigation'. Since it's a hook, works only in client components.
