@@ -1,0 +1,10 @@
+Components:
+->Client components: used for user interaction/implementing interactivity, and for using React hooks.
+->Server components: used for data fetching, as it is more secure and data can be cached when using server components. We cannot use React hooks here.
+
+Routes:
+->Each folder is a separate route, and by rules, the page rendered at that route must be named page.js. Each folder/route should have atleast one page.js that renders when you go to that route.
+--Nested routes:
+->A folder within another folder. Ex: membership inside accounts, makes accounts the parent folder/route. This means to access membership, we need to go to /accounts/membership. And as usual membership folder should also have page.js.
+--Dynamic routes:
+->A folder names within [], thus telling NextJS that this is a dynamic route.
