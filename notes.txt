@@ -12,5 +12,5 @@ Routes:
 ->[...folderName] -> for >1 parameter in dynamic route. Ex: products/1 -> dynamic. products/1/2/3.. -> needs catch all route. Parameters called slugs. Catch all routes can have any number of slugs.
 
 Links:
-->Method 1: using Link from 'next/link' -> <Link href={'/pathname'}>some text</Link>
+->Method 1: using Link from 'next/link' -> <Link href={'/pathname'}>some text</Link>. Can be used in both client and server components, but if we want to apply some logic before redirecting the user in server component, we cannot do that using Link.
 ->Method 2: useRouter from 'next/navigation'. Since it's a hook, works only in client components.
